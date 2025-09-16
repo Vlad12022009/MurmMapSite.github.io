@@ -196,9 +196,8 @@ async function initMap() {
             }
         ]
     });
-    map.addChild(new YMapDefaultSchemeLayer({
-        theme: "dark", customization: layer
-    }));
+    map.addChild(layer);
+    
     // Добавляем слой для отображения схематической карты
 
 }

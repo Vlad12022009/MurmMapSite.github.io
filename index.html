@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Карта писателей Мурманской области</title>
+</head>
+<body>
+<div id="map" class="map"></div>
+
+<!-- Селектор авторов -->
+<select id="writerSelect" style="position:absolute;top:50px;left:10px;z-index:1000;padding:5px;width:50%;">
+    <option value="">Выберите писателя</option>
+    <option value="Маслов">Виталий Семёнович Маслов</option>
+    <option value="Колычев">Николай Владимирович Колычев</option>
+    <option value="Тимофеев">Виктор Леонтьевич Тимофеев</option>
+    <option value="Воронова">Октябрина Владимировна Воронова</option>
+    <option value="Сорокажердьев">Владимир Васильевич Сорокажердьев</option>
+    <option value="Скромный">Николай Александрович Скромный</option>
+    <option value="Орешета">Михаил Григорьевич Орешета</option>
+    <option value="Баёв">Константин Иванович Баёв</option>
+    <option value="Подстаницкий">Александр Иванович Подстаницкий</option>
+    <option value="Смирнов">Владимир Александрович Смирнов</option>
+    <option value="Рубцов">Николай Михайлович Рубцов</option>
+</select>
+
+<!-- Блок для текста -->
+<div id="infoBox"></div>
+
+<!-- Подпись карты -->
+<div class="fixed-label">Карта Мурманской области</div>
+
+<!-- Yandex Maps -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=bacbbf5f-db59-4694-a24b-ecbf671bda98&lang=ru_RU"></script>
+<script src="scrypt.js"></script>
+</body>
+</html>
